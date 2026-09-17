@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scout Club</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0a0a14;
+    --panel: #14121f;
+    --accent: #2fd68a;
+    --accent2: #22c4e8;
+    --text: #f2f0f7;
+    --muted: #9a96ad;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(circle at 50% -10%, #1c1a33 0%, var(--bg) 55%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 20px 80px; }
+  header { text-align: center; margin-bottom: 48px; }
+  .logo {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline { color: var(--muted); font-size: 16px; margin-top: 10px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 40px 0;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .card h3 { margin: 0 0 8px; font-size: 15px; color: var(--accent); }
+  .card p { margin: 0; color: var(--muted); font-size: 13.5px; }
+  .cta {
+    text-align: center;
+    margin-top: 48px;
+    padding: 28px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(47,214,138,0.12), rgba(34,196,232,0.12));
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .cta a {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 12px 26px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: #06140d;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+  footer a { color: var(--accent2); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Scout Club</div>
+      <div class="tagline">Build your club. Scout the next generation. Become a champion.</div>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Live Match Simulation</h3>
+        <p>Pick your tactics, watch every match play out minute by minute.</p>
+      </div>
+      <div class="card">
+        <h3>Transfer Market</h3>
+        <p>Buy, sell, and loan players — trade directly with other managers.</p>
+      </div>
+      <div class="card">
+        <h3>Scouting &amp; Academy</h3>
+        <p>Send scouts around the world to find wonderkids before anyone else.</p>
+      </div>
+      <div class="card">
+        <h3>Stadium &amp; Facilities</h3>
+        <p>Grow your ground, training center, and fan base as your club rises.</p>
+      </div>
+      <div class="card">
+        <h3>Career Mode</h3>
+        <p>Climb league pyramids across 10 countries, cups, and continental play.</p>
+      </div>
+      <div class="card">
+        <h3>9 Languages</h3>
+        <p>Play in Turkish, English, German, Spanish, French, Italian, Arabic, Japanese, or Korean.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <div>Scout Club is coming soon to the App Store.</div>
+      <a href="support.html">Need help or have feedback?</a>
+    </div>
+
+    <footer>
+      © 2026 Kadir Kıran · <a href="support.html">Support</a>
+    </footer>
+  </div>
+</body>
+</html>
