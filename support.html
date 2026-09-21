@@ -20,9 +20,9 @@
     background: radial-gradient(circle at 50% -10%, #1c1a33 0%, var(--bg) 55%);
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
   }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 20px 80px; }
   a { color: var(--accent2); }
   .logo {
     font-size: 22px;
@@ -33,7 +33,14 @@
     color: transparent;
     text-decoration: none;
   }
-  h1 { font-size: 28px; margin-top: 40px; }
+  nav { margin-top: 10px; font-size: 13px; }
+  nav a { margin-right: 14px; }
+  h1 { font-size: 28px; margin-top: 36px; }
+  h2 { font-size: 17px; color: var(--accent); margin-top: 32px; }
+  p, li { color: var(--muted); font-size: 14px; }
+  ul { padding-left: 20px; }
+  .updated { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+  hr { border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 56px 0 8px; }
   .card {
     background: var(--panel);
     border: 1px solid rgba(255,255,255,0.08);
@@ -42,36 +49,33 @@
     margin: 20px 0;
   }
   .card h2 { font-size: 15px; color: var(--accent); margin: 0 0 8px; }
-  .card p { margin: 0; color: var(--muted); font-size: 14px; }
-  .email {
-    display: inline-block;
-    margin-top: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--text);
-  }
+  .card p { margin: 0 0 8px; }
+  .email { display: inline-block; margin-top: 8px; font-size: 15px; font-weight: 700; color: var(--text); }
   footer { margin-top: 60px; color: var(--muted); font-size: 12.5px; text-align: center; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <a class="logo" href="index.html">Scout Club</a>
+    <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav>
+
     <h1>Support</h1>
 
     <div class="card">
       <h2>CONTACT US</h2>
-      <p>Found a bug, have feedback, or need help with your account?</p>
-      <a class="email" href="mailto:kadirkran1@gmail.com">kadirkran1@gmail.com</a>
+      <p>Found a bug, have feedback, want to report a club name or need help with your data?</p>
+      <a class="email" href="mailto:contact@coactalab.com">contact@coactalab.com</a>
+      <p>Please include your Manager ID (in the game: Settings &gt; Account) and your device model.</p>
     </div>
 
     <div class="card">
       <h2>COMMON QUESTIONS</h2>
-      <p>
-        <strong>I lost my progress / my club disappeared.</strong><br>
-        Your club is tied to your sign-in on this device. Make sure you're
-        opening the app with the same account you started with, then email
-        us with your club name and the approximate date you started playing.
-      </p>
+      <p><strong>I lost my progress / my club disappeared.</strong><br>
+      Your club is tied to the anonymous sign-in on this device. If you deleted the app or changed devices, the sign-in may be new. Email us with your Manager ID (if you saved it), your club name and the approximate date you started playing.</p>
+      <p><strong>How do I delete my data?</strong><br>
+      Email us from an address you can prove is yours with your Manager ID. We will delete your club data and confirm. See the <a href="privacy.html">Privacy Policy</a>.</p>
+      <p><strong>How do I report an offensive club name?</strong><br>
+      Open the manager leaderboard in the game and tap the flag next to the club, or email us.</p>
     </div>
 
     <div class="card">
@@ -79,7 +83,15 @@
       <p>We aim to reply within a few business days.</p>
     </div>
 
-    <footer>© 2026 Kadir Kıran</footer>
+    <h1>Destek</h1>
+    <div class="card">
+      <h2>BİZE ULAŞ</h2>
+      <p>Hata mı buldun, geri bildirimin mi var, bir kulüp adını şikâyet etmek veya verilerinle ilgili yardım almak mı istiyorsun?</p>
+      <a class="email" href="mailto:contact@coactalab.com">contact@coactalab.com</a>
+      <p>Lütfen Yönetici Kimliğini (oyunda Ayarlar &gt; Hesap) ve cihaz modelini yaz.</p>
+    </div>
+
+    <footer>© 2026 Kadir Kıran · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
   </div>
 </body>
 </html>

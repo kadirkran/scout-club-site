@@ -33,79 +33,89 @@
     color: transparent;
     text-decoration: none;
   }
+  nav { margin-top: 10px; font-size: 13px; }
+  nav a { margin-right: 14px; }
   h1 { font-size: 28px; margin-top: 36px; }
-  h2 { font-size: 17px; color: var(--accent); margin-top: 36px; }
+  h2 { font-size: 17px; color: var(--accent); margin-top: 32px; }
   p, li { color: var(--muted); font-size: 14px; }
+  ul { padding-left: 20px; }
   .updated { color: var(--muted); font-size: 12.5px; margin-top: 4px; }
-  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.5px; }
-  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.08); color: var(--muted); }
-  th { color: var(--text); }
+  hr { border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 56px 0 8px; }
+  .card {
+    background: var(--panel);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin: 20px 0;
+  }
+  .card h2 { font-size: 15px; color: var(--accent); margin: 0 0 8px; }
+  .card p { margin: 0 0 8px; }
+  .email { display: inline-block; margin-top: 8px; font-size: 15px; font-weight: 700; color: var(--text); }
   footer { margin-top: 60px; color: var(--muted); font-size: 12.5px; text-align: center; }
 </style>
 </head>
 <body>
   <div class="wrap">
     <a class="logo" href="index.html">Scout Club</a>
+    <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="support.html">Support</a></nav>
+    <section lang="en">
     <h1>Privacy Policy</h1>
-    <div class="updated">Last updated: September 17, 2026</div>
-
-    <p>
-      This policy explains what data Scout Club ("the app") collects, why,
-      and how it's used. The app is a football club management game
-      published by Kadir Kıran.
-    </p>
-
-    <h2>DATA WE COLLECT</h2>
-    <p>When you play Scout Club, we collect:</p>
-    <table>
-      <tr><th>Data</th><th>Purpose</th></tr>
-      <tr><td>Anonymous account identifier</td><td>Lets your club, squad, and progress persist between sessions, without requiring a name, email, or any personal account.</td></tr>
-      <tr><td>Gameplay data (club name, squad, match results, in-game currency balances, settings)</td><td>Core game functionality — this is what makes your save work.</td></tr>
-      <tr><td>Advertising identifier (IDFA on iOS, or equivalent)</td><td>Used by Google AdMob to show and measure rewarded and interstitial ads. You can limit this via your device's ad tracking settings.</td></tr>
-      <tr><td>Basic device/diagnostic information</td><td>Used by Firebase and Google AdMob for crash reporting and service reliability.</td></tr>
-    </table>
-    <p>
-      We do not require or collect your real name, email address, phone
-      number, or any government-issued ID to play.
-    </p>
-
-    <h2>THIRD-PARTY SERVICES</h2>
-    <p>Scout Club uses the following third-party services, each with its own privacy policy:</p>
-    <ul>
-      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase (Google)</a> — authentication and cloud data storage for your club/save data.</li>
-      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a> — serves the rewarded and interstitial ads in the app.</li>
-    </ul>
-
-    <h2>CHILDREN'S PRIVACY</h2>
-    <p>
-      Scout Club does not knowingly collect personal information from
-      children beyond the anonymous, non-identifying data described above.
-      The app does not require a real name, email, or other personal
-      identifiers to play.
-    </p>
-
-    <h2>DATA DELETION</h2>
-    <p>
-      To request deletion of your club/save data, email us at
-      <a href="mailto:kadirkran1@gmail.com">kadirkran1@gmail.com</a> with
-      your club name and approximate start date. We'll remove your data
-      from our systems.
-    </p>
-
-    <h2>CHANGES TO THIS POLICY</h2>
-    <p>
-      If this policy changes, the "Last updated" date above will change
-      too. Continued use of the app after an update means you accept the
-      revised policy.
-    </p>
-
+    <div class="updated">Last updated: 21 September 2026</div>
+    <h2>WHO WE ARE</h2>
+    <p>Scout Club ("the game", "we") is a football club management game for iPhone and iPad. This policy explains what information the game uses and why. Contact: <a href="mailto:contact@coactalab.com">contact@coactalab.com</a>.</p>
+    <h2>INFORMATION WE COLLECT</h2>
+    <ul><li>Anonymous account ID: the game signs you in anonymously through Firebase Authentication. We do not ask for your name, e-mail address, phone number or password.</li><li>Game data: your club name, stadium name, squad, results, purchases made with in-game currency, settings (such as volume) and progress. This data is stored in Google Firebase (Cloud Firestore) so that your progress is saved and your club can appear on the manager leaderboard and transfer market for other players.</li><li>Advertising data: the game shows rewarded and interstitial ads through Google AdMob. AdMob may collect your device's advertising identifier (only if you allow tracking), IP address, approximate location, device information and ad interactions to serve and measure ads and to prevent fraud.</li><li>Apple Game Center: if you are signed in to Game Center, achievements and leaderboard scores are handled by Apple under Apple's privacy policy.</li></ul>
+    <h2>WHAT WE DO NOT DO</h2>
+    <p>We do not sell your personal information. We do not use your data for anything other than running the game, saving your progress, showing ads and keeping the game fair and safe. The game does not use your camera, microphone, contacts, photos or precise location.</p>
+    <h2>HOW INFORMATION IS USED</h2>
+    <p>To run the game and save your progress; to show the leaderboard and transfer market; to show and measure ads; to prevent cheating and abuse; to answer your requests.</p>
+    <h2>ADVERTISING AND TRACKING</h2>
+    <p>On iOS the game asks for your permission before allowing ads to use the advertising identifier for tracking. You can change this any time in Settings &gt; Privacy &amp; Security &gt; Tracking. If you decline, you still see ads, but they are not personalised. Where required (for example the EEA and the UK) a consent message from Google is shown first.</p>
+    <h2>INFORMATION OTHER PLAYERS CAN SEE</h2>
+    <p>Your club name, stadium name, manager level and squad listings on the transfer market are visible to other players. Do not put personal information in these names. Offensive names are blocked, and you can report a club name from the manager leaderboard.</p>
+    <h2>CHILDREN</h2>
+    <p>The game is not directed at children under 13 and we do not knowingly collect personal information from them. If you believe a child has provided information, write to <a href="mailto:contact@coactalab.com">contact@coactalab.com</a> and we will delete it.</p>
+    <h2>RETENTION AND DELETION</h2>
+    <p>We keep your game data while your account is active. To have your data deleted, write to <a href="mailto:contact@coactalab.com">contact@coactalab.com</a> from an address you can prove is yours and include the Manager ID shown in the game under Settings &gt; Account. We will delete your club data and confirm. Deleting the app alone does not delete server-side data.</p>
+    <h2>YOUR RIGHTS</h2>
+    <p>Depending on where you live (for example under the GDPR, the UK GDPR, the Turkish KVKK or the CCPA) you may have the right to access, correct, delete or export your data, to object to or restrict processing, and to complain to your data-protection authority. Write to <a href="mailto:contact@coactalab.com">contact@coactalab.com</a> to use these rights.</p>
+    <h2>INTERNATIONAL TRANSFERS AND SECURITY</h2>
+    <p>Data is processed by Google (Firebase, AdMob) on servers that may be outside your country. Data is sent over encrypted connections and access to it is restricted by security rules. No system is perfectly secure.</p>
+    <h2>CHANGES</h2>
+    <p>We may update this policy. The date at the top shows the latest version; important changes will also be announced in the game.</p>
     <h2>CONTACT</h2>
-    <p>
-      Questions about this policy? Email
-      <a href="mailto:kadirkran1@gmail.com">kadirkran1@gmail.com</a>.
-    </p>
-
-    <footer>© 2026 Kadir Kıran</footer>
+    <p><a href="mailto:contact@coactalab.com">contact@coactalab.com</a></p>
+  </section>
+    <hr>
+    <section lang="tr">
+    <h1>Gizlilik Politikası</h1>
+    <div class="updated">Son güncelleme: 21 Eylül 2026</div>
+    <h2>BIZ KIMIZ</h2>
+    <p>Scout Club ("oyun", "biz"), iPhone ve iPad için bir futbol kulübü yönetim oyunudur. Bu politika, oyunun hangi bilgileri neden kullandığını açıklar. İletişim: <a href="mailto:contact@coactalab.com">contact@coactalab.com</a>.</p>
+    <h2>TOPLADIĞIMIZ BILGILER</h2>
+    <ul><li>Anonim hesap kimliği: oyun seni Firebase Authentication ile anonim olarak giriş yaptırır. Adını, e-postanı, telefonunu veya şifreni istemeyiz.</li><li>Oyun verileri: kulüp adın, stadyum adın, kadron, sonuçların, oyun içi para birimiyle yaptığın harcamalar, ayarların (ses gibi) ve ilerlemen. Bu veriler, ilerlemen kaydedilsin ve kulüp diğer oyuncular için yönetici sıralamasında ve transfer pazarında görünebilsin diye Google Firebase'de (Cloud Firestore) saklanır.</li><li>Reklam verileri: oyun Google AdMob üzerinden ödüllü ve geçiş reklamları gösterir. AdMob; reklam kimliğini (yalnızca izin verirsen), IP adresini, yaklaşık konumu, cihaz bilgilerini ve reklam etkileşimlerini reklam göstermek, ölçmek ve sahtekârlığı önlemek için toplayabilir.</li><li>Apple Game Center: Game Center'a giriş yaptıysan başarımların ve sıralama puanların Apple'ın gizlilik politikası kapsamında Apple tarafından işlenir.</li></ul>
+    <h2>YAPMADIKLARIMIZ</h2>
+    <p>Kişisel bilgilerini satmayız. Verilerini oyunu çalıştırmak, ilerlemeni kaydetmek, reklam göstermek ve oyunu adil ve güvenli tutmak dışında kullanmayız. Oyun kameranı, mikrofonunu, rehberini, fotoğraflarını veya kesin konumunu kullanmaz.</p>
+    <h2>BILGILERIN KULLANIMI</h2>
+    <p>Oyunu çalıştırmak ve ilerlemeni kaydetmek; sıralamayı ve transfer pazarını göstermek; reklam göstermek ve ölçmek; hile ve kötüye kullanımı önlemek; taleplerini yanıtlamak.</p>
+    <h2>REKLAM VE IZLEME</h2>
+    <p>iOS'ta oyun, reklamların reklam kimliğini izleme için kullanmasına izin vermeden önce senden izin ister. Bunu istediğin zaman Ayarlar &gt; Gizlilik ve Güvenlik &gt; İzleme bölümünden değiştirebilirsin. İzin vermezsen reklam görmeye devam edersin ancak reklamlar kişiselleştirilmez. Gerekli bölgelerde (ör. AEA ve Birleşik Krallık) önce Google'ın onay mesajı gösterilir.</p>
+    <h2>DIĞER OYUNCULARIN GÖREBILDIKLERI</h2>
+    <p>Kulüp adın, stadyum adın, yönetici seviyen ve transfer pazarındaki oyuncu ilanların diğer oyuncular tarafından görülür. Bu adlara kişisel bilgi yazma. Uygunsuz adlar engellenir; yönetici sıralamasından bir kulüp adını şikâyet edebilirsin.</p>
+    <h2>ÇOCUKLAR</h2>
+    <p>Oyun 13 yaşın altındaki çocuklara yönelik değildir ve onlardan bilerek kişisel bilgi toplamayız. Bir çocuğun bilgi verdiğini düşünüyorsan <a href="mailto:contact@coactalab.com">contact@coactalab.com</a> adresine yaz, sileriz.</p>
+    <h2>SAKLAMA VE SILME</h2>
+    <p>Oyun verilerini hesabın etkin olduğu sürece saklarız. Verilerinin silinmesi için <a href="mailto:contact@coactalab.com">contact@coactalab.com</a> adresine, sana ait olduğunu gösterebileceğin bir adresten, oyunda Ayarlar &gt; Hesap altında yazan Yönetici Kimliği ile birlikte yaz. Kulüp verilerini silip sana bildiririz. Uygulamayı silmek sunucudaki verileri tek başına silmez.</p>
+    <h2>HAKLARLARIN</h2>
+    <p>Yaşadığın yere göre (ör. GDPR, Birleşik Krallık GDPR'ı, KVKK veya CCPA kapsamında) verilerine erişme, düzeltme, silme veya aktarma; işlenmesine itiraz etme veya kısıtlama ve veri koruma otoritene şikâyette bulunma hakların olabilir. Bunun için <a href="mailto:contact@coactalab.com">contact@coactalab.com</a> adresine yaz.</p>
+    <h2>ULUSLARARASI AKTARIM VE GÜVENLIK</h2>
+    <p>Veriler Google (Firebase, AdMob) tarafından ülken dışındaki sunucularda işlenebilir. Veriler şifreli bağlantılarla gönderilir ve erişim güvenlik kurallarıyla kısıtlanır. Hiçbir sistem tamamen güvenli değildir.</p>
+    <h2>DEĞIŞIKLIKLER</h2>
+    <p>Bu politikayı güncelleyebiliriz. En üstteki tarih son sürümü gösterir; önemli değişiklikler oyunda da duyurulur.</p>
+    <h2>İLETIŞIM</h2>
+    <p><a href="mailto:contact@coactalab.com">contact@coactalab.com</a></p>
+  </section>
+    <footer>© 2026 Kadir Kıran · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="support.html">Support</a></footer>
   </div>
 </body>
 </html>
